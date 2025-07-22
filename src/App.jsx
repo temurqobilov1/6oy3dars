@@ -76,7 +76,7 @@ const handleSubmit = (e) => {
       <button className="text-xl text-white bg-[#a8a8a84c] w-30 h-10 rounded-2xl hover:bg-white hover:text-[#424242] hover:cursor-pointer ml-auto mr-auto">Add User</button>
     </form>
 
-    <ul className="bg-[#7e7e7eac] w-[850px] flex flex-col gap-4 p-5 rounded-2xl mt-[-200px] ml-[600px]">
+    <ul className="bg-[#7e7e7eac] w-[850px] flex flex-col gap-4 p-5 rounded-2xl mt-[-100px] ml-[600px]">
     {users.map((user) => {
       return (
         <li key={user.id} className="flex gap-10 items-center">
