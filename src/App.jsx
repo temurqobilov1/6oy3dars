@@ -52,39 +52,39 @@ const handleSubmit = (e) => {
 
   return(
     <>
-    <form ref={form} className="w-[300px]  mt-10 ml-10 bg-[#a8a8a8] flex flex-col gap-4 p-3 rounded-3xl" onSubmit={handleSubmit} action="">
+    <form ref={form} className="w-[300px]  mt-10 ml-10 bg-[#a8a8a84c] flex flex-col gap-4 p-3 rounded-3xl" onSubmit={handleSubmit} action="">
       <div >
-        <label className="text-2xl" htmlFor="">Name: </label>
+        <label className="text-2xl text-white" htmlFor="">Name: </label>
         <br />
-        <input className="border pl-0.5 rounded text-xl ml-2" type="text" ref={name}/>
+        <input className="border text-white pl-0.5 rounded text-xl ml-2" type="text" ref={name}/>
       </div>
       <div >
-        <label className="text-2xl" htmlFor="">Email: </label>
+        <label className="text-2xl text-white" htmlFor="">Email: </label>
         <br />
-        <input className="border pl-0.5 rounded text-xl ml-2" type="email" ref={email}/>
+        <input className="border text-white pl-0.5 rounded text-xl ml-2" type="email" ref={email}/>
       </div>
       <div >
-        <label className="text-2xl" htmlFor="">Age: </label>
+        <label className="text-2xl text-white" htmlFor="">Age: </label>
         <br />
-        <input className="border pl-0.5 rounded text-xl ml-2" type="number" ref={age} />
+        <input className="border text-white pl-0.5 rounded text-xl ml-2" type="number" ref={age} />
       </div>
       <div >
-        <label className="text-2xl" htmlFor="">Avatar: </label>
+        <label className="text-2xl text-white" htmlFor="">Avatar: </label>
         <br />
-        <input className="border pl-0.5 rounded text-xl ml-2" type="url" ref={img} />
+        <input className="border text-white pl-0.5 rounded text-xl ml-2" type="url" ref={img} />
       </div>
-      <button className="text-xl text-white bg-[#424242] w-30 h-10 rounded-2xl border-2 hover:bg-white hover:text-[#424242] hover:cursor-pointer ml-auto mr-auto">Add User</button>
+      <button className="text-xl text-white bg-[#a8a8a84c] w-30 h-10 rounded-2xl hover:bg-white hover:text-[#424242] hover:cursor-pointer ml-auto mr-auto">Add User</button>
     </form>
 
-    <ul className="bg-[#a8a8a8] w-[850px] flex flex-col gap-4 p-5 rounded-2xl mt-[-200px] ml-[600px]">
+    <ul className="bg-[#7e7e7eac] w-[850px] flex flex-col gap-4 p-5 rounded-2xl mt-[-200px] ml-[600px]">
     {users.map((user) => {
       return (
         <li key={user.id} className="flex gap-10 items-center">
-          <img className="w-12 h-12 rounded-[50%]" src={user.img} alt="" />
-          <p className="text-2xl font-semibold">{user.name}</p>
-          <p className="ml-9 font-semibold">email: <span className="italic">{ user.email}</span></p>
-          <p className="ml-9 font-semibold">age: <span className="font-bold text-xl"> {user.age}</span></p>
-          <button className="ml-9 text-xl text-white bg-[#424242] w-20 h-9 rounded-2xl  hover:bg-white hover:text-[#424242] hover:cursor-pointer" onClick={() => handleDelete(user.id)}>Delete</button>
+          <img className="w-12 h-12 rounded-[50%] " src={user.img} alt="" />
+          <p className="text-2xl font-semibold text-white">{user.name}</p>
+          <p className="ml-9 font-semibold text-white">email: <span className="italic">{ user.email}</span></p>
+          <p className="ml-9 font-semibold text-white">age: <span className="font-bold text-xl"> {user.age}</span></p>
+          <button className="ml-9 text-xl text-white bg-[#a8a8a84c] w-20 h-9 rounded-2xl  hover:bg-white hover:text-[#424242] hover:cursor-pointer" onClick={() => handleDelete(user.id)}>Delete</button>
         </li>
       )
     })}

@@ -1,3 +1,10 @@
 @import "tailwindcss";
 
+body{
+  background-image: url('https://cdn1.ozone.ru/s3/multimedia-8/6305746460.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 
